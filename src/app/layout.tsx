@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 
-// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const rubik = Rubik({
@@ -12,21 +11,53 @@ const rubik = Rubik({
   style: "normal",
 });
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 export const metadata: Metadata = {
-  title: "Nachliel Pokroy's Portfolio",
-  description: "Nachliel Pokroy's Portfolio",
+  title: "Nachliel Pokroy | Full Stack Developer Portfolio",
+  description:
+    "Full Stack Developer with expertise in React, NodeJS, TypeScript, and modern web development. View my projects, experience, and skills.",
+  keywords:
+    "Full Stack Developer, React Developer, NodeJS, TypeScript, JavaScript, Web Development, Software Engineer, Frontend Developer, Backend Developer",
+  authors: [{ name: "Nachliel Pokroy" }],
+  creator: "Nachliel Pokroy",
+  publisher: "Nachliel Pokroy",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://nachli.com",
+    siteName: "Nachliel Pokroy Portfolio",
+    title: "Nachliel Pokroy | Full Stack Developer",
+    description:
+      "Full Stack Developer specializing in React, NodeJS, and modern web technologies",
+    images: [
+      {
+        url: "/profile.jpg",
+        width: 150,
+        height: 150,
+        alt: "Nachliel Pokroy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nachliel Pokroy | Full Stack Developer",
+    description:
+      "Full Stack Developer specializing in React, NodeJS, and modern web technologies",
+    images: ["/profile.jpg"],
+  },
   icons: {
     icon: "/NP.svg",
+    apple: "/NP.svg",
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
 };
 
