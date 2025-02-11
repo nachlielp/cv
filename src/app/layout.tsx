@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 
 import "./globals.css";
-
+import BackgroundTiles from "./BackgroundTiles";
 const rubik = Rubik({
   subsets: ["latin"],
   display: "swap",
@@ -73,12 +73,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${rubik.className} `}>
+        <BackgroundTiles />
+        {children}
         <div className="page-background">
-          <div className="page-background-tile tile-1"></div>
+          {/* <div className="page-background-tile tile-1"></div>
           <div className="page-background-tile tile-2"></div>
           <div className="page-background-tile tile-3"></div>
-          <div className="page-background-tile tile-4"></div>
-          <div style={{ zIndex: 2, position: "relative" }}>{children}</div>
+          <div className="page-background-tile tile-4"></div> */}
+          <div style={{ zIndex: 2, position: "relative" }}></div>
         </div>
       </body>
     </html>

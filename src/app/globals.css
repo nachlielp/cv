@@ -24,63 +24,27 @@ body {
 }
 
 /* Background */
-.page-background {
+/* .page-background {
   width: 100vw;
   height: 100vh;
-}
+} 
 
 .page-background-tile {
-  background-color: hsla(240, 100%, 98%, 1); /* Light blue base */
+  background-color: hsla(35, 100%, 98%, 1);
   background-image: radial-gradient(
       at 43% 20%,
-      hsla(210, 100%, 88%, 1) 0px,
-      /* Lighter blue */ transparent 50%
+      hsla(35, 100%, 88%, 1) 0px,
+      transparent 50%
     ),
-    radial-gradient(
-      at 57% 67%,
-      hsla(220, 100%, 83%, 1) 0px,
-      /* Slightly darker blue */ transparent 50%
-    ),
-    radial-gradient(
-      at 34% 79%,
-      hsla(220, 100%, 83%, 1) 0px,
-      /* Slightly darker blue */ transparent 50%
-    ),
-    radial-gradient(
-      at 20% 22%,
-      hsla(210, 100%, 88%, 1) 0px,
-      /* Lighter blue */ transparent 50%
-    ),
-    radial-gradient(
-      at 100% 35%,
-      hsla(230, 100%, 71%, 1) 0px,
-      /* More saturated blue */ transparent 50%
-    ),
-    radial-gradient(
-      at 100% 63%,
-      hsla(230, 100%, 71%, 1) 0px,
-      /* More saturated blue */ transparent 50%
-    ),
-    radial-gradient(
-      at 100% 0%,
-      hsla(230, 100%, 71%, 1) 0px,
-      /* More saturated blue */ transparent 50%
-    ),
-    radial-gradient(
-      at 100% 100%,
-      hsla(230, 100%, 71%, 1) 0px,
-      /* More saturated blue */ transparent 50%
-    ),
-    radial-gradient(
-      at 0% 100%,
-      hsla(200, 100%, 75%, 1) 0px,
-      /* Slightly lighter blue */ transparent 50%
-    ),
-    radial-gradient(
-      at 0% 0%,
-      hsla(190, 100%, 75%, 1) 0px,
-      /* Cyan-ish blue */ transparent 50%
-    );
+    radial-gradient(at 57% 67%, hsla(357, 100%, 83%, 1) 0px, transparent 50%),
+    radial-gradient(at 34% 79%, hsla(357, 100%, 83%, 1) 0px, transparent 50%),
+    radial-gradient(at 20% 22%, hsla(36, 100%, 88%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 35%, hsla(210, 100%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 63%, hsla(210, 100%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(210, 100%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(210, 100%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(333, 100%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(54, 100%, 75%, 1) 0px, transparent 50%);
   background-size: cover;
   background-position: center;
   margin-bottom: -1px;
@@ -89,62 +53,62 @@ body {
 .tile-1 {
   width: 100vw;
   height: 100vh;
-  position: absolute; /* Take out of normal flow */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: hsla(240, 100%, 98%, 1); /* Light blue base */
+  background-color: hsla(240, 100%, 98%, 1); 
   background-image: radial-gradient(
       at 43% 20%,
       hsla(210, 100%, 88%, 1) 0px,
-      /* Lighter blue */ transparent 50%
+      transparent 50%
     ),
     radial-gradient(
       at 57% 67%,
       hsla(220, 100%, 83%, 1) 0px,
-      /* Slightly darker blue */ transparent 50%
+      transparent 50%
     ),
     radial-gradient(
       at 34% 79%,
       hsla(220, 100%, 83%, 1) 0px,
-      /* Slightly darker blue */ transparent 50%
+      transparent 50%
     ),
     radial-gradient(
       at 20% 22%,
       hsla(210, 100%, 88%, 1) 0px,
-      /* Lighter blue */ transparent 50%
+       transparent 50%
     ),
     radial-gradient(
       at 100% 35%,
       hsla(230, 100%, 71%, 1) 0px,
-      /* More saturated blue */ transparent 50%
+transparent 50%
     ),
     radial-gradient(
       at 100% 63%,
       hsla(230, 100%, 71%, 1) 0px,
-      /* More saturated blue */ transparent 50%
+transparent 50%
     ),
     radial-gradient(
       at 100% 0%,
       hsla(230, 100%, 71%, 1) 0px,
-      /* More saturated blue */ transparent 50%
+     transparent 50%
     ),
     radial-gradient(
       at 100% 100%,
       hsla(230, 100%, 71%, 1) 0px,
-      /* More saturated blue */ transparent 50%
+     transparent 50%
     ),
     radial-gradient(
       at 0% 100%,
       hsla(200, 100%, 75%, 1) 0px,
-      /* Slightly lighter blue */ transparent 50%
+      transparent 50%
     ),
     radial-gradient(
       at 0% 0%,
       hsla(190, 100%, 75%, 1) 0px,
-      /* Cyan-ish blue */ transparent 50%
+      transparent 50%
     );
   background-size: cover;
   background-position: center;
@@ -153,7 +117,7 @@ body {
 .tile-2 {
   width: 100vw;
   height: 100vh;
-  position: absolute; /* Take out of normal flow */
+  position: absolute; 
   top: 100%;
   left: 0;
   width: 100%;
@@ -164,7 +128,7 @@ body {
 .tile-3 {
   width: 100vw;
   height: 100vh;
-  position: absolute; /* Take out of normal flow */
+  position: absolute;
   top: 200%;
   left: 0;
   width: 100%;
@@ -174,7 +138,7 @@ body {
 .tile-4 {
   width: 100vw;
   height: 100vh;
-  position: absolute; /* Take out of normal flow */
+  position: absolute;
   top: 300%;
   left: 0;
   width: 100%;
@@ -183,6 +147,7 @@ body {
   transform: rotate(180deg) scaleX(-1);
   display: none;
 }
+*/
 /* Navigation */
 .nav {
   display: flex;
