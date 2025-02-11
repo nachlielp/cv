@@ -67,7 +67,8 @@ export default function Portfolio() {
               </a>
             </span>{" "}
             - an interactive calendar for the Israeli Contact Improv community.
-            A PWA built with React, NodeJS, and Supabase.
+            A PWA built with React, TypeScript, NodeJS, Firebase Cloud
+            Messaging, and PostgreSQL - Supabase.
           </p>
         </div>
       </section>
