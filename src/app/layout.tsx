@@ -77,6 +77,7 @@ export default function RootLayout({
           <div className="page-background-tile tile-1"></div>
           <div className="page-background-tile tile-2"></div>
           <div className="page-background-tile tile-3"></div>
+          <div className="page-background-tile tile-4"></div>
           <div style={{ zIndex: 2, position: "relative" }}>{children}</div>
         </div>
       </body>

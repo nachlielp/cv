@@ -11,17 +11,10 @@ export default function Portfolio() {
       </nav>
 
       <section className="section hero">
-        <article className="hero-content">
-          <h1 className="title">Hey, I am Nachliel Pokroy</h1>
-          <h2 className="text">
-            I am a{" "}
-            <span style={{ fontWeight: "bold" }}>
-              Junior Frontend Developer
-            </span>
-            <br />
-            with a year and a half of experience.
-          </h2>
-        </article>
+        <h1 className="title">Hey, I am Nachliel Pokroy</h1>
+        <h2 className="text">
+          I am a Junior Frontend Developer with a year and a half of experience.
+        </h2>
       </section>
 
       <section id="about" className="section">
