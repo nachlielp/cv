@@ -1,8 +1,26 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Portfolio() {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText("me@nachli.com");
+    emailCopyedAlert();
+  };
+  const emailCopyedAlert = () => {
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false), 4000); // Hide after 3 seconds
+  };
   return (
     <div className="container">
+      {showAlert && (
+        <div className="email-copied-alert">
+          <p>Email copied to clipboard!</p>
+        </div>
+      )}
       <nav className="nav">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -111,6 +129,14 @@ export default function Portfolio() {
               <Image src={src} alt={alt} width={36} height={36} />
             </a>
           ))}
+          <button onClick={copyEmail} className="copy-email-btn">
+            <Image
+              src="/email-square-icon.svg"
+              alt="Email"
+              width={36}
+              height={36}
+            />
+          </button>
         </div>
       </footer>
     </div>
