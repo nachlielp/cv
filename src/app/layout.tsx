@@ -12,11 +12,11 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  title: "Nachliel Pokroy | Full Stack Developer Portfolio",
+  title: "Nachliel Pokroy | Frontend Developer Portfolio",
   description:
-    "Full Stack Developer with expertise in React, NodeJS, TypeScript, and modern web development. View my projects, experience, and skills.",
+    "Frontend Developer with expertise in React, TypeScript, and modern web development. View my projects, experience, and skills.",
   keywords:
-    "Full Stack Developer, React Developer, NodeJS, TypeScript, JavaScript, Web Development, Software Engineer, Frontend Developer, Backend Developer",
+    "Frontend Developer, React Developer, TypeScript, JavaScript, Web Development, Software Engineer, Frontend Developer, Backend Developer",
   authors: [{ name: "Nachliel Pokroy" }],
   creator: "Nachliel Pokroy",
   publisher: "Nachliel Pokroy",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://nachli.com",
     siteName: "Nachliel Pokroy Portfolio",
-    title: "Nachliel Pokroy | Full Stack Developer",
+    title: "Nachliel Pokroy | Frontend Developer",
     description:
-      "Full Stack Developer specializing in React, NodeJS, and modern web technologies",
+      "Frontend Developer specializing in React, TypeScript, and modern web technologies",
     images: [
       {
         url: "/profile.jpg",
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nachliel Pokroy | Full Stack Developer",
+    title: "Nachliel Pokroy | Frontend Developer",
     description:
-      "Full Stack Developer specializing in React, NodeJS, and modern web technologies",
+      "Frontend Developer specializing in React, TypeScript, and modern web technologies",
     images: ["/profile.jpg"],
   },
   icons: {
@@ -68,7 +68,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubik.className} page-background`}>{children}</body>
+      <body className={`${rubik.className} `}>
+        <div className="page-background">
+          <div className="page-background-tile tile-1"></div>
+          <div className="page-background-tile tile-2"></div>
+          <div className="page-background-tile tile-3"></div>
+          <div style={{ zIndex: 2, position: "relative" }}>{children}</div>
+        </div>
+      </body>
     </html>
   );
 }

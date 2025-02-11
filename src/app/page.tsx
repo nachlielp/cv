@@ -16,7 +16,7 @@ export default function Portfolio() {
           <h2 className="text">
             I am a{" "}
             <span style={{ fontWeight: "bold" }}>
-              Junior FullStack Developer
+              Junior Frontend Developer
             </span>
             <br />
             with a year and a half of experience.
@@ -37,7 +37,7 @@ export default function Portfolio() {
             />
           </article>
           <p className="text">
-            I&apos;m a FullStack Developer using React, NodeJS, JS, and TS. I am
+            I&apos;m a Frontend Developer using React, TypeScript, and JS. I am
             patient and thorough, wanting to contribute and influence. I am also
             responsible, with a high work ethic and good interpersonal skills.
           </p>
@@ -76,8 +76,8 @@ export default function Portfolio() {
         <h2 className="title">🎓 Education</h2>
         <div className="card">
           <p className="text">
-            <span className="subtitle">FullStack Developer Bootcamp</span> -
-            2024 - Coding Academy
+            <span className="subtitle">Frontend Developer Bootcamp</span> - 2024
+            - Coding Academy
           </p>
           <p className="text">
             <span className="subtitle">Software Practical Engineer</span> - 2024
