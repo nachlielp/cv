@@ -28,10 +28,14 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  metadataBase: new URL("https://cv.nachli.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://nachli.com",
+    url: "https://cv.nachli.com",
     siteName: "Nachliel Pokroy Portfolio",
     title: "Nachliel Pokroy | Frontend Developer",
     description:
