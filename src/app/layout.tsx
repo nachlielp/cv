@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "Frontend Developer with expertise in React, TypeScript, and modern web development. View my projects, experience, and skills.",
   keywords:
-    "Frontend Developer, React Developer, TypeScript, JavaScript, Web Development, Software Engineer, Frontend Developer, Backend Developer",
+    "Frontend Developer, React Developer, TypeScript, JavaScript, Web Development, Software Engineer, Frontend Developer, Backend Developer, נחלאיל, פוקורי, נחליאל פוקרוי, nachliel pokroy, nachliel, pokroy",
   authors: [{ name: "Nachliel Pokroy" }],
   creator: "Nachliel Pokroy",
   publisher: "Nachliel Pokroy",
